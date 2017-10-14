@@ -1,0 +1,115 @@
+---
+layout: default
+---
+
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+<div class="container"></div>
+<header class="site-header" role="banner">
+  {%- if site.profile_picture -%}
+  <div class="row justify-content-center">
+    <img class="img-fluid img-thumbnail" style="margin-top: 30px; max-height: 300px" src="{{ site.profile_picture | relative_url }}"
+      alt="Could not load profile picture" />
+  </div>
+  {%- endif -%}
+
+  <div class="row justify-content-center">
+    <h1 class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</h1>
+  </div>
+
+  <div class="row justify-content-center">
+    <ul class="nav">
+      {%- if page_paths -%}
+      <li class="nav-item">
+        {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+        <a class="btn btn-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        {%- endif -%}
+        {%- endfor -%}
+      </li>
+    </ul>
+    {%- endif -%}
+  </div>
+
+  <div class="row justify-content-center">
+    <div id="header-description">
+      <div class="col">
+        {%- if site.profile_description -%}
+          {%- for desc in site.profile_description -%}
+          <p> {{desc}} </p>
+          {%- endfor -%}
+        {%- endif -%}
+
+      </div>
+    </div>
+  </div>
+</header>
+</div>
+
+  {%- if site.skillset_datascience or site.skillset_webdevelopment -%}
+  <div class="container-fluid grey-background">
+  <div id="section-skillset">
+  <div class="container">
+    <h2 class="post-list-heading"> Skillset </h2>
+    <div class="row">
+      {%- if site.skillset_datascience -%}
+      <div class="col">
+        <div class="row justify-content-center">
+          <h4>Data Science</h4>
+        </div>
+        <div class="row justify-content-center">
+          <ul class="skillset-list">
+            {%- for skills in site.skillset_datascience -%}
+            <li>{{skills}}</li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      </div>
+      {%- endif -%}
+      {%- if site.skillset_webdevelopment -%}
+      <div class="col">
+        <div class="row justify-content-center">
+          <h4>Web Development</h4>
+        </div>
+        <div class="row justify-content-center">
+          <ul class="skillset-list">
+            {%- for skills in site.skillset_webdevelopment -%}
+            <li>{{skills}}</li> 
+            {%- endfor -%}
+          </ul>
+        </div>
+      </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+</div>
+{%- endif -%}
+
+<div class="container home">
+
+    {{ content }}
+
+    {%- if site.posts.size > 0 -%}
+
+    <h2 class="post-list-heading"> Articles </h2>
+
+    <div class="row justify-content-center">
+      {%- for post in site.posts -%}
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <div class="card" style="width: 18em;">
+        {%- if post.image -%}
+        <img class="card-image-top" src="{{post.image}}" alt="Problem with loading image" />
+        {%- endif -%}
+        <div class="card-body">
+          <a class="card-link" href="{{post.url | relative_url }}">
+            <h5 class="card-title">{{ post.title | escape }}</h5>
+          </a>
+          <p class="card-text"><span class="post-meta">{{ post.date | date: date_format }}</span></p>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+
+  {%- endif -%}

@@ -1,1 +1,69 @@
-theme: jekyll-theme-cayman
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Andrew Chan
+profile_picture: assets/images/profile_pic.JPG
+email: kankyu@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Andrew Chan's page for blogging, projects and about me.
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: iAndrewChan
+github_username:  kankyu
+
+profile_description: [
+  "I am a recent graduate looking to start my early career in a startup / small company with a focus in datascience. I am fascinated by the relationship between technology and data, especially in how it can create business value.",
+  "I believe a small company will give me the opportunity to learn a versatile skillset that would not usually be present in a large company."
+]
+
+skillset_datascience: [
+  "Database: MongoDB",
+  "Data Processing and Cleaning: Pandas, Numpy",
+  "Machine Learning: Scikit-Learn",
+  "Data Visualisation: Matplotlib, React(BizCharts)"
+]
+
+skillset_webdevelopment: [
+  HTML5,
+  CSS3,
+  Javascript,
+  React.js,
+  Flexbox,
+  CSS-Grid,
+  SASS,
+  Bootstrap4,
+  Pug.js,
+  Hexo.js
+  ] 
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
