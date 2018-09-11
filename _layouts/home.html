@@ -36,9 +36,9 @@ layout: default
     <div id="header-description">
       <div class="col">
         {%- if site.profile_description -%}
-          {%- for desc in site.profile_description -%}
-          <p> {{desc}} </p>
-          {%- endfor -%}
+        {%- for desc in site.profile_description -%}
+        <p> {{desc}} </p>
+        {%- endfor -%}
         {%- endif -%}
 
       </div>
@@ -47,69 +47,70 @@ layout: default
 </header>
 </div>
 
-  {%- if site.skillset_datascience or site.skillset_webdevelopment -%}
-  <div class="container-fluid grey-background">
+{%- if site.skillset_datascience or site.skillset_webdevelopment -%}
+<div class="container-fluid grey-background">
   <div id="section-skillset">
-  <div class="container">
-    <h2 class="post-list-heading"> Skillset </h2>
-    <div class="row">
-      {%- if site.skillset_datascience -%}
-      <div class="col">
-        <div class="row justify-content-center">
-          <h4>Data Science</h4>
+    <div class="container">
+      <h2 class="post-list-heading"> Skillset </h2>
+      <div class="row">
+        {%- if site.skillset_datascience -%}
+        <div class="col">
+          <div class="row justify-content-center">
+            <h4>Data Science</h4>
+          </div>
+          <div class="row justify-content-center">
+            <ul class="skillset-list">
+              {%- for skills in site.skillset_datascience -%}
+              <li>{{skills}}</li>
+              {%- endfor -%}
+            </ul>
+          </div>
         </div>
-        <div class="row justify-content-center">
-          <ul class="skillset-list">
-            {%- for skills in site.skillset_datascience -%}
-            <li>{{skills}}</li>
-            {%- endfor -%}
-          </ul>
+        {%- endif -%}
+        {%- if site.skillset_webdevelopment -%}
+        <div class="col">
+          <div class="row justify-content-center">
+            <h4>Web Development</h4>
+          </div>
+          <div class="row justify-content-center">
+            <ul class="skillset-list">
+              {%- for skills in site.skillset_webdevelopment -%}
+              <li>{{skills}}</li>
+              {%- endfor -%}
+            </ul>
+          </div>
         </div>
+        {%- endif -%}
       </div>
-      {%- endif -%}
-      {%- if site.skillset_webdevelopment -%}
-      <div class="col">
-        <div class="row justify-content-center">
-          <h4>Web Development</h4>
-        </div>
-        <div class="row justify-content-center">
-          <ul class="skillset-list">
-            {%- for skills in site.skillset_webdevelopment -%}
-            <li>{{skills}}</li> 
-            {%- endfor -%}
-          </ul>
-        </div>
-      </div>
-      {%- endif -%}
     </div>
   </div>
-</div>
 </div>
 {%- endif -%}
 
 <div class="container home">
 
-    {{ content }}
+  {{ content }}
 
-    {%- if site.posts.size > 0 -%}
+  {%- if site.posts.size > 0 -%}
 
-    <h2 class="post-list-heading"> Articles </h2>
+  <h2 class="post-list-heading"> Articles </h2>
 
-    <div class="row justify-content-center">
-      {%- for post in site.posts -%}
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <div class="card" style="width: 18em;">
-        {%- if post.image -%}
-        <img class="card-image-top" src="{{post.image}}" alt="Problem with loading image" />
-        {%- endif -%}
-        <div class="card-body">
-          <a class="card-link" href="{{post.url | relative_url }}">
-            <h5 class="card-title">{{ post.title | escape }}</h5>
-          </a>
-          <p class="card-text"><span class="post-meta">{{ post.date | date: date_format }}</span></p>
-        </div>
+
+  <div class="card-columns">
+    {%- for post in site.posts -%}
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <div class="card">
+      {%- if post.image -%}
+      <img class="card-image-top" src="{{post.image}}" />
+      {%- endif -%}
+      <div class="card-body">
+        <a class="card-link" href="{{post.url | relative_url }}">
+          <h5 class="card-title">{{ post.title | escape }}</h5>
+        </a>
+        <p class="card-text"><span class="post-meta">{{ post.date | date: date_format }}</span></p>
       </div>
-      {%- endfor -%}
     </div>
+    {%- endfor -%}
+  </div>
 
   {%- endif -%}

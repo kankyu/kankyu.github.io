@@ -25,7 +25,7 @@ twitter_username: iAndrewChan
 github_username:  kankyu
 
 profile_description: [
-  "I am a recent graduate looking to start my early career in a startup / small company with a focus in datascience. I am fascinated by the relationship between technology and data, especially in how it can create business value.",
+  "I am a recent graduate looking to start my early career in a startup / small company with a focus in data science. I am fascinated by the relationship between technology and data, especially in how it can create business value.",
   "I believe a small company will give me the opportunity to learn a versatile skillset that would not usually be present in a large company."
 ]
 
@@ -33,7 +33,7 @@ skillset_datascience: [
   "Database: MongoDB",
   "Data Processing and Cleaning: Pandas, Numpy",
   "Machine Learning: Scikit-Learn",
-  "Data Visualisation: Matplotlib, React(BizCharts)"
+  "Data Visualisation: Matplotlib, React.js(BizCharts)"
 ]
 
 skillset_webdevelopment: [
