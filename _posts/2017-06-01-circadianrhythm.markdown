@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Circadian Rhythm 
-date:   2017-06-01 
+date: 2017-05-09 
 categories: Data Modelling  
-image: "assets/images/profile_pic.JPG"
+image: "/assets/images/2017-05-09-circadianrhythm/sphere_black.gif"
 ---
 Premise for the project?
 what I learned?
