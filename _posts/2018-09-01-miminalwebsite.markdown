@@ -2,7 +2,7 @@
 layout: post
 title: Creating Miminal's Website 
 date: 2018-09-01
-categories: Web Development
+categories: ["Web Development"]
 image: "/assets/images/2018-09-01-miminalwebsite/logo.png"
 ---
 

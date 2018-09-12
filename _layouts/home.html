@@ -107,7 +107,16 @@ layout: default
         <a class="card-link" href="{{post.url | relative_url }}">
           <h5 class="card-title">{{ post.title | escape }}</h5>
         </a>
-        <p class="card-text"><span class="post-meta">{{ post.date | date: date_format }}</span></p>
+        <p class="card-text">
+          <span class="post-meta">Published: {{ post.date | date: date_format }}</span>
+          {%- if post.categories -%}
+          <p class="post-meta"> Categories: &nbsp
+            {%- for category in post.categories -%}
+            {{category}} &nbsp
+            {%- endfor -%}
+          </p>
+          {%- endif -%}
+        </p>
       </div>
     </div>
     {%- endfor -%}
