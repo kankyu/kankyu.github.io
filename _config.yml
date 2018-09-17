@@ -25,8 +25,16 @@ twitter_username: iAndrewChan
 github_username:  kankyu
 
 profile_description: [
-  "I am a recent graduate looking to start my early career in a startup / small company with a focus in software development and data engineering. I am fascinated by the relationship between technology and data, especially in how it can create business value.",
-  "I believe a small company will give me the opportunity to learn a versatile skillset that would not usually be present in a large company."
+<<<<<<< HEAD
+  "I am a recent graduate looking to start my early career in Full stack development / Software development / Data engineering",
+  "I have commercial experience in Full-Stack Development, using an agile approach with scrum methodology. In addition to Full stack development I also have experience with communicating with managers about upcoming feature implementations, deadline alterations and implementation progress.
+||||||| parent of 4ad7362... fix
+  "I am a recent graduate looking to start my early career in software development and data engineering. I am fascinated by the relationship between technology and data, especially in how it can create business value.",
+  "I have commercial experience in Full-Stack Development, using agile development with scrum methodology. In addition to software development I also have experience with communicating with managers about upcoming feature implementations, deadline alterations and implementation progress.
+=======
+  "I am a recent graduate looking to start my early career in software development and data engineering. I am fascinated by the relationship between technology and data, especially in how it can create business value.",
+  "I have commercial experience in Full-Stack Development, using agile development with scrum methodology. In addition to software development I also have experience with communicating with managers about upcoming feature implementations, deadline alterations and implementation progress."
+>>>>>>> 4ad7362... fix
 ]
 
 skillset_datascience: [
