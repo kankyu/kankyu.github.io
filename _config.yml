@@ -15,14 +15,14 @@
 # in the templates via {{ site.myvariable }}.
 title: Andrew Chan
 profile_picture: assets/images/profile_pic.JPG
-email: kankyu@gmail.com
+email: iiandrewchan@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Andrew Chan's page for blogging, projects and about me.
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: iAndrewChan
-github_username:  kankyu
+github_username:  iAndrewChan
 
 profile_description: [
 <<<<<<< HEAD
