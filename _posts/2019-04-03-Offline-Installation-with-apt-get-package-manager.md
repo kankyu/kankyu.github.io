@@ -3,7 +3,7 @@ layout: post
 title:  Offline installation with apt-get and yum package manager 
 date:   2019-04-03
 categories: ["Linux"]
-image: "/assets/images/2019-04-03/offline-install.png"
+image: "/assets/images/2019-04-03-offline-install-with-apt/offline-install.png"
 ---
 
 My situation:
