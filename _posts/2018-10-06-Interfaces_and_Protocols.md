@@ -6,9 +6,11 @@ categories: ["Object Oriented Programming", "Python"]
 ---
 
 ### Interface
+
 An interface is a programming structure that allowed us to enforce certain properties on an object/ class. E.g. say we have a car class and scooter class and a truck class. Each of the three classes should have a start_engine() method.
 
 ### Duck Typing
+
 In runtime invoke methods we expect the method to have (occurs at runtime).
 
 > For safety checks we use the try except approach or the hasattr.
@@ -20,7 +22,6 @@ We often hear about file like object or an iterable. If an object has a `read` m
 Magic methods belonging to a class, is an informal interface (to enforce certain properties on an object or class). It makes the object conform to protocols. We can implement a protocol by implementing the methods expected by it.
 
 > You can think of protocols as enforced properties for an object / class.
-
 
 ```python
 class Team:
@@ -58,19 +59,18 @@ for member in justice_league:
     wonder women
     flash
 
-
 ### Formal interfaces ABCS
 
 Informal interfaces or duck typing can cause confusion. For example, `Bird` and `Aeroplane` both can `fly()`. But they are not the same, even if they implement the same (informal) interface / protocols. Abstract Base Classes (ABCs) can help solve this issue.
 
-Any objects deriving from these base classes are **forced to implement those methods**. This is equivalent to a interface. 
+Any objects deriving from these base classes are **forced to implement those methods**. This is equivalent to a interface.
 
 If helps us enforce other developers to realise when deriving from this "interface" they are made to define the necessary methods. This is especially useful for frameworks or you want to make sure rules are being established.
 
 #### Benefit of interfaces
-* enforce behaviour for other developers to follow
-* catch mispelled or forgotten methods to catch bugs.
 
+* enforce behaviour for other developers to follow
+* catch misspelled or forgotten methods to catch bugs.
 
 ```python
 import abc
@@ -83,14 +83,12 @@ class Bird(abc.ABC):
 # now if any class derives from our base `Bird` class, it must implement the `fly` method too.
 ```
 
-
 ```python
 class Parrot(Bird):
     pass
 
 p = Parrot()
 ```
-
 
     ---------------------------------------------------------------------------
 
@@ -100,11 +98,8 @@ p = Parrot()
           2     pass
           3 
     ----> 4 p = Parrot()
-    
 
     TypeError: Can't instantiate abstract class Parrot with abstract methods fly
-
-
 
 ```python
 class Parrot(Bird):
@@ -117,8 +112,6 @@ print(isinstance(p, Bird)) # parrot class is recognized as an instance of Bird A
 ```
 
     True
-
-
 
 ```python
 class Aeroplane(abc.ABC):
@@ -138,7 +131,6 @@ print(isinstance(b, Bird))
 
     False
     False
-
 
 You can see that even though objects have the same methods, we can tell the difference between the Aeroplane interface and Boeing interface.
 
