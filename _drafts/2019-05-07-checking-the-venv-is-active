@@ -1,0 +1,17 @@
+---
+layout: post
+title:  Checking pyvenv virtual environment is active
+date:   2019-04-18
+categories: ["Python"]
+---
+
+To check if I am in a python virtual environment for pyvenv.
+Pyvenv is included in Python3.3+ [^pyvenv]. 
+
+
+When a virtual environment is not active `sys.prefix` will equal `sys.base_prefix`.
+When a virtual envrionment is active the `sys.prefix` will be different to `sys.base_prefix`.
+
+[^pyvenv]: [https://docs.python.org/3/library/venv.html](https://docs.python.org/3/library/venv.html)
+
+https://stackoverflow.com/questions/1871549/determine-if-python-is-running-inside-virtualenv
