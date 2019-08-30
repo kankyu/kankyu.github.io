@@ -26,6 +26,7 @@ github_username:  kankyu
 
 profile_description: [
 <<<<<<< HEAD
+<<<<<<< HEAD
   "I am a recent graduate looking to start my early career in Full stack development / Software development / Data engineering",
   "I have commercial experience in Full-Stack Development, using an agile approach with scrum methodology. In addition to Full stack development I also have experience with communicating with managers about upcoming feature implementations, deadline alterations and implementation progress.
 ||||||| parent of 4ad7362... fix
@@ -35,6 +36,13 @@ profile_description: [
   "I am a recent graduate looking to start my early career in software development and data engineering. I am fascinated by the relationship between technology and data, especially in how it can create business value.",
   "I have commercial experience in Full-Stack Development, using agile development with scrum methodology. In addition to software development I also have experience with communicating with managers about upcoming feature implementations, deadline alterations and implementation progress."
 >>>>>>> 4ad7362... fix
+||||||| parent of 1b95269... desc update
+  "I am a recent graduate looking to start my early career in Full stack development / Software development / Data engineering",
+  "I have commercial experience in Full-Stack Development, using an agile approach with scrum methodology. In addition to Full stack development I also have experience with communicating with managers about upcoming feature implementations, deadline alterations and implementation progress."
+=======
+  "I am a recent graduate looking to start my early career in Software development / Data engineering / Full stack development ",
+  "I have commercial experience in Full-Stack Development, using an agile approach with scrum methodology. In addition to Full stack development I also have experience with communicating with managers about upcoming feature implementations, deadline alterations and implementation progress."
+>>>>>>> 1b95269... desc update
 ]
 
 skillset_datascience: [
