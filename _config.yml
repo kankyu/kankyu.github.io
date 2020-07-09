@@ -29,25 +29,25 @@ profile_description: [
   ""
 ]
 
-skillset_datascience: [
-  "Database: MongoDB",
-  "Data Processing and Cleaning: Pandas, Numpy",
-  "Machine Learning: Scikit-Learn",
-  "Data Visualisation: Matplotlib, React.js(BizCharts)"
-]
+# skillset_datascience: [
+#   "Database: MongoDB",
+#   "Data Processing and Cleaning: Pandas, Numpy",
+#   "Machine Learning: Scikit-Learn",
+#   "Data Visualisation: Matplotlib, React.js(BizCharts)"
+# ]
 
-skillset_webdevelopment: [
-  HTML5,
-  CSS3,
-  Javascript,
-  React.js,
-  Flexbox,
-  CSS-Grid,
-  SASS,
-  Bootstrap4,
-  Pug.js,
-  Hexo.js
-  ] 
+# skillset_webdevelopment: [
+#   HTML5,
+#   CSS3,
+#   Javascript,
+#   React.js,
+#   Flexbox,
+#   CSS-Grid,
+#   SASS,
+#   Bootstrap4,
+#   Pug.js,
+#   Hexo.js
+#   ] 
 
 # Build settings
 markdown: kramdown
